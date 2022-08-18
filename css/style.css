@@ -1,0 +1,74 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+body {
+    background-image: linear-gradient(#2193b0, #6dd5ed);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+#game-board {
+    background-color: #CCC;
+    width: 90vmin;
+    height: 92vmin;
+    position: absolute;
+    left: 20vw;
+
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.snake {
+    background-color: hsl(200, 100%, 50%);
+    border: .25vmin solid black;
+}
+
+.food {
+    background-color: hsl(50, 100%, 50%);
+    border: .25vmin solid black;
+}
+
+#score {
+    position: absolute;
+    right: 3vh;
+    top: 3vh;
+    line-height: 50px;
+    font-size: 38px;
+    align-self: baseline;
+    font-family: 'Rubik Moonrocks', cursive;
+
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 11vh;
+    right: 33px;
+    line-height: 50px;
+    font-size: 38px;
+    align-self: baseline;
+    font-family: 'Rubik Moonrocks', cursive;
+
+}
+
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    color: #26505e;
+    position: absolute;
+    bottom: 0px;
+    left: 40vw;
+
+}
